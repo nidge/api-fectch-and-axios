@@ -26,7 +26,8 @@ function App() {
   // this is using axios
 useEffect(() => {
     setAppState({ loading: true });
-    const apiUrl = 'https://api.github.com/users/nidge/repos';
+ //   const apiUrl = 'https://api.github.com/users/nidge/repos';
+    const apiUrl = 'http://jsonplaceholder.typicode.com/users';
     axios.get(apiUrl).then((repos) => {
       const allRepos = repos.data;
       setAppState({ loading: false, repos: allRepos });
