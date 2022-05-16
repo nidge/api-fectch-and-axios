@@ -35,12 +35,6 @@ useEffect(() => {
   
   
   return (
-
-
-    <form onSubmit={this.handleSubmit}>
-    <Container>
-
-
     <div className='App'>
       <div className='container'>
         <h1>My Repositories</h1>
@@ -58,17 +52,6 @@ useEffect(() => {
         </div>
       </footer>
     </div>
-
-
-
-        <Button type="submit" variant="primary">Confirm</Button>
-
-    </Container>
-</form>
-
-
-
-
   );
 }
 export default App;
